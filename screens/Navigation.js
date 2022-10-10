@@ -25,7 +25,7 @@ const Navigation = ({ props }) => {
   //travelTime
 
   useEffect(() => {
-    if (!origin) return
+    //if (!origin) return
 
     const getTime = async () => {
       const URL = `https://maps.googleapis.com/maps/api/distancematrix/json?origins=${origin.description}&destinations=${destination.description}units=imperial&key=${GOOGLE_MAPS_API_KEY}`
